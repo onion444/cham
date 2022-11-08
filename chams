@@ -32,7 +32,7 @@ while getgenv().Configuration["Active"] do
     for _,v in pairs(game.Players:GetChildren()) do
         local chr = v.Character
         if chr ~= nil then
-        local esp = holder:FindFirstChild(v.Name) or Instance.new("")
+        local esp = holder:FindFirstChild(v.Name) or Instance.new("Highlight")
         esp.Name = v.Name
         if uselocalplayer == false and esp.Name == game.Players.LocalPlayer.Name then
             else
